@@ -1,4 +1,4 @@
-import { createNameSection } from "./home-page.js";
+import { createNameSection } from "./general.js";
 
 function menuPage(menu, content) {
   content.appendChild(createNameSection("Menu"));

@@ -1,13 +1,4 @@
-function createNameSection(name) {
-  const container = document.createElement("div");
-  container.classList.add("heading-container");
-  const heading = document.createElement("h1");
-  heading.textContent = name;
-
-  container.appendChild(heading);
-
-  return container;
-}
+import { createNameSection } from "./general.js";
 
 function homePage(info, content) {
   content.appendChild(createNameSection(info.name));
@@ -58,4 +49,4 @@ function homePage(info, content) {
   }
 }
 
-export { homePage, createNameSection };
+export { homePage };
